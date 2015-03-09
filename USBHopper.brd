@@ -1237,10 +1237,12 @@ design rules under a new name.</description>
 <contactref element="U$57" pad="P$5"/>
 <wire x1="10.16" y1="13.8" x2="8.255" y2="15.705" width="0.508" layer="1"/>
 <contactref element="U$73" pad="P$4"/>
+<contactref element="R4" pad="2"/>
 <wire x1="52.07" y1="11.85" x2="60.03" y2="13.785" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="10.16" x2="13.97" y2="8.001" width="0" layer="19" extent="1-1"/>
 <wire x1="12.57" y1="12.7" x2="11.43" y2="13.716" width="0" layer="19" extent="1-1"/>
-<wire x1="45.985" y1="3.74" x2="52.07" y2="11.85" width="0" layer="19" extent="1-1"/>
+<wire x1="54.61" y1="3.39" x2="52.07" y2="11.85" width="0" layer="19" extent="1-1"/>
+<wire x1="45.985" y1="3.74" x2="54.61" y2="3.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3OUT">
 <contactref element="FTDI" pad="17"/>
@@ -1281,7 +1283,6 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="11.43" x2="43.815" y2="12.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
-<contactref element="R4" pad="2"/>
 <contactref element="RS485" pad="8"/>
 <contactref element="JPWRSEL" pad="5"/>
 <contactref element="U$65" pad="P$8"/>
@@ -1334,7 +1335,6 @@ design rules under a new name.</description>
 <via x="12.954" y="18.796" extent="1-16" drill="0.5"/>
 <via x="12.954" y="14.859" extent="1-16" drill="0.5"/>
 <wire x1="12.954" y1="18.796" x2="12.954" y2="14.859" width="0.508" layer="16"/>
-<wire x1="45.085" y1="7.56" x2="54.61" y2="3.39" width="0" layer="19" extent="1-1"/>
 <wire x1="46.99" y1="13.97" x2="45.085" y2="7.56" width="0" layer="19" extent="1-1"/>
 <wire x1="23.495" y1="7.62" x2="45.085" y2="7.56" width="0" layer="19" extent="1-1"/>
 </signal>

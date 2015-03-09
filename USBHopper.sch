@@ -13378,7 +13378,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="U$47" library="supply3" deviceset="GND" device=""/>
 <part name="HSENSE" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
-<part name="U$54" library="supply3" deviceset="+5V" device=""/>
 <part name="U$55" library="supply3" deviceset="GND" device=""/>
 <part name="U$3" library="supply3" deviceset="+5V" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -13429,6 +13428,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="U$33" library="supply3" deviceset="USB+5V" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="U$38" library="supply3" deviceset="USB+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13488,7 +13488,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$47" gate="G$1" x="137.16" y="76.2" rot="R180"/>
 <instance part="HSENSE" gate="G$1" x="-81.28" y="-50.8" rot="R180"/>
 <instance part="R4" gate="G$1" x="-53.34" y="-27.94" rot="R90"/>
-<instance part="U$54" gate="G$1" x="-68.58" y="-20.32" rot="R180"/>
 <instance part="U$55" gate="G$1" x="-68.58" y="-66.04" rot="R180"/>
 <instance part="U$3" gate="G$1" x="157.48" y="7.62"/>
 <instance part="R7" gate="G$1" x="-91.44" y="50.8" rot="R270"/>
@@ -13543,6 +13542,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$33" gate="G$1" x="-15.24" y="-20.32" rot="R180"/>
 <instance part="JP1" gate="G$1" x="-17.78" y="-35.56" rot="R180"/>
 <instance part="JP2" gate="G$1" x="-20.32" y="-35.56"/>
+<instance part="U$38" gate="G$1" x="-68.58" y="-20.32" rot="R180"/>
 </instances>
 <busses>
 <bus name="ADBUS:TXD,RXD,RTS#,CTS#,DTR#,DSR#,DCD#,RI#">
@@ -13984,6 +13984,12 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="0" y1="-20.32" x2="0" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="U$33" gate="G$1" pin="USB+5V"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$38" gate="G$1" pin="USB+5V"/>
+</segment>
 </net>
 <net name="+3V3OUT" class="0">
 <segment>
@@ -14048,12 +14054,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="U$54" gate="G$1" pin="+5V"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-66.04" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-22.86" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="RS485" gate="G$1" pin="VCC"/>
 <pinref part="U$3" gate="G$1" pin="+5V"/>
