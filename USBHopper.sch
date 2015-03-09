@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -13223,7 +13223,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pin name="D" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="G" x="-2.54" y="-5.08" visible="off" length="short" rot="R90"/>
 <wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
@@ -13232,7 +13231,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="-2.032" y1="0" x2="-2.032" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="2.032" y1="0" x2="2.032" y2="-1.524" width="0.254" layer="94"/>
 <polygon width="0.254" layer="94">
-<vertex x="0" y="-0.254"/>
+<vertex x="0" y="0"/>
 <vertex x="-0.508" y="-1.016"/>
 <vertex x="0.508" y="-1.016"/>
 </polygon>
@@ -13261,6 +13260,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </polygon>
 <wire x1="-0.762" y1="1.778" x2="-0.762" y2="0.762" width="0.254" layer="94"/>
 <wire x1="2.794" y1="-2.54" x2="-2.794" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="0" x2="-0.508" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13321,116 +13321,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </deviceset>
 </devicesets>
 </library>
-<library name="ic-package">
-<description>&lt;b&gt;IC Packages an Sockets&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SOCKET-08">
-<description>&lt;b&gt;Dual In Line Socket&lt;/b&gt;</description>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-3.048" y="-0.508" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.461" y="-2.667" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DIL8">
-<wire x1="-5.08" y1="3.81" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-6.35" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
-<text x="-4.445" y="4.445" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.445" y="-8.89" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="5" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="6" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="7" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="8" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIL8" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;Dual In Line / Socket&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIL8" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL08">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="S" package="SOCKET-08">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13444,7 +13334,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
 <part name="L1" library="wuerth-elektronik" deviceset="WE-CBF" device="_0805" value="K400R-10"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="C5" library="rcl" deviceset="CPOL-EU" device="B" value="4.7µF"/>
+<part name="C5" library="rcl" deviceset="CPOL-EU" device="153CLV-0405" value="4.7µF"/>
 <part name="FTDI" library="ftdichip" deviceset="FT232R" device="L"/>
 <part name="CX" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="JPWRSEL" library="pinhead" deviceset="PINHD-2X3" device=""/>
@@ -13465,11 +13355,9 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="U$18" library="supply3" deviceset="GND" device=""/>
 <part name="U$22" library="supply3" deviceset="GND" device=""/>
 <part name="U$25" library="supply3" deviceset="USB+5V" device=""/>
-<part name="U$33" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$34" library="supply3" deviceset="USB+5V" device=""/>
 <part name="U$36" library="supply3" deviceset="USB+5V" device=""/>
 <part name="U$37" library="supply3" deviceset="+3V3OUT" device=""/>
-<part name="U$38" library="supply3" deviceset="+3V3" device=""/>
 <part name="U$39" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$40" library="supply3" deviceset="+1V8" device=""/>
 <part name="U$41" library="supply3" deviceset="+3V3" device=""/>
@@ -13483,7 +13371,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="U$24" library="supply3" deviceset="GND" device=""/>
 <part name="REN" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="U$50" library="supply3" deviceset="+5V" device=""/>
-<part name="PWRLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Orange"/>
+<part name="PWRLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Blue"/>
 <part name="U$52" library="supply3" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
 <part name="HGND" library="pinhead" deviceset="PINHD-1X2" device=""/>
@@ -13492,8 +13380,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
 <part name="U$54" library="supply3" deviceset="+5V" device=""/>
 <part name="U$55" library="supply3" deviceset="GND" device=""/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="0"/>
-<part name="U$53" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$3" library="supply3" deviceset="+5V" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="U$26" library="supply3" deviceset="+5V" device=""/>
@@ -13522,26 +13408,27 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <part name="U$29" library="supply3" deviceset="+1V8" device=""/>
 <part name="U$30" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$31" library="supply3" deviceset="GND" device=""/>
-<part name="TXLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Rot"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
+<part name="TXLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="RTX" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
 <part name="U$48" library="supply3" deviceset="+5V" device=""/>
 <part name="U$59" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$60" library="supply3" deviceset="GND" device=""/>
-<part name="RXLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Rot"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
+<part name="RXLED" library="led" deviceset="LED" device="CHIP-LED0805" value="Red"/>
+<part name="RRX" library="rcl" deviceset="R-EU_" device="R0805" value="270"/>
 <part name="U$61" library="supply3" deviceset="VCCIO" device=""/>
 <part name="JTX" library="flo-parts" deviceset="RESISTOR" device="CONNECT"/>
 <part name="JRX" library="flo-parts" deviceset="RESISTOR" device="CONNECT"/>
-<part name="JINT" library="flo-parts" deviceset="RESISTOR" device="CONNECT"/>
-<part name="U$2" library="supply3" deviceset="USB+5V" device=""/>
-<part name="U$63" library="supply3" deviceset="USB+5V" device=""/>
 <part name="U$57" library="flo-logic" deviceset="DMP2240UDM" device=""/>
-<part name="U$64" library="flo-logic" deviceset="PNP_NPN_BIAS" device="NXP_PIMD3" value="4k7/47k"/>
-<part name="U$72" library="flo-logic" deviceset="PNP_NPN_BIAS" device="NXP_PIMD3" value="4k7/47k"/>
+<part name="UTX" library="flo-logic" deviceset="PNP_NPN_BIAS" device="NXP_PIMD3" value="4k7/47k"/>
+<part name="URX" library="flo-logic" deviceset="PNP_NPN_BIAS" device="NXP_PIMD3" value="4k7/47k"/>
 <part name="U$73" library="flo-logic" deviceset="PNP_NPN_BIAS" device="NXP_PIMD3"/>
 <part name="U$32" library="flo-header" deviceset="CON1X4" device=""/>
 <part name="U$46" library="flo-header" deviceset="CON1X4" device=""/>
-<part name="IC1" library="ic-package" deviceset="DIL8" device=""/>
+<part name="U$74" library="supply3" deviceset="+3V3OUT" device=""/>
+<part name="U$2" library="supply3" deviceset="VCCIO" device=""/>
+<part name="U$33" library="supply3" deviceset="USB+5V" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13552,8 +13439,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 &lt; DSR: Data Set Ready
 &lt; DCD: Data Carrier Detect
 &lt; RI: Ring Indicator</text>
-<text x="-5.08" y="-73.66" size="1.778" layer="250">SIMPLE</text>
-<text x="38.1" y="-73.66" size="1.778" layer="250">integrated</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="35.56" y="58.42" rot="R180"/>
@@ -13580,16 +13465,14 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$18" gate="G$1" x="137.16" y="73.66" rot="R180"/>
 <instance part="U$22" gate="G$1" x="-38.1" y="-2.54" rot="R180"/>
 <instance part="U$25" gate="G$1" x="-38.1" y="35.56" rot="R180"/>
-<instance part="U$33" gate="G$1" x="58.42" y="73.66" rot="R180"/>
 <instance part="U$34" gate="G$1" x="78.74" y="86.36"/>
 <instance part="U$36" gate="G$1" x="58.42" y="76.2" rot="R180"/>
-<instance part="U$37" gate="G$1" x="55.88" y="48.26" rot="R180"/>
-<instance part="U$38" gate="G$1" x="-2.54" y="12.7"/>
+<instance part="U$37" gate="G$1" x="58.42" y="48.26" rot="R180"/>
 <instance part="U$39" gate="G$1" x="66.04" y="2.54" rot="R180"/>
 <instance part="U$40" gate="G$1" x="88.9" y="0"/>
 <instance part="U$41" gate="G$1" x="88.9" y="5.08"/>
 <instance part="U$42" gate="G$1" x="-38.1" y="12.7" rot="R180"/>
-<instance part="U$43" gate="G$1" x="2.54" y="91.44"/>
+<instance part="U$43" gate="G$1" x="0" y="91.44"/>
 <instance part="U$44" gate="G$1" x="0" y="63.5"/>
 <instance part="U$1" gate="G$1" x="78.74" y="83.82"/>
 <instance part="U$45" gate="G$1" x="-99.06" y="63.5" rot="R180"/>
@@ -13598,17 +13481,15 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$24" gate="G$1" x="35.56" y="68.58" rot="R90"/>
 <instance part="REN" gate="G$1" x="-81.28" y="50.8" rot="R270"/>
 <instance part="U$50" gate="G$1" x="0" y="106.68"/>
-<instance part="PWRLED" gate="G$1" x="7.62" y="-48.26"/>
-<instance part="U$52" gate="G$1" x="-2.54" y="-66.04" rot="R180"/>
-<instance part="R3" gate="G$1" x="7.62" y="-33.02" rot="R90"/>
+<instance part="PWRLED" gate="G$1" x="0" y="-58.42"/>
+<instance part="U$52" gate="G$1" x="-15.24" y="-66.04" rot="R180"/>
+<instance part="R3" gate="G$1" x="0" y="-48.26" rot="R90"/>
 <instance part="HGND" gate="G$1" x="142.24" y="73.66"/>
 <instance part="U$47" gate="G$1" x="137.16" y="76.2" rot="R180"/>
-<instance part="HSENSE" gate="G$1" x="-68.58" y="-43.18" rot="R180"/>
-<instance part="R4" gate="G$1" x="-40.64" y="-22.86" rot="R180"/>
-<instance part="U$54" gate="G$1" x="-58.42" y="-22.86" rot="R180"/>
-<instance part="U$55" gate="G$1" x="-20.32" y="-58.42" rot="R270"/>
-<instance part="R5" gate="G$1" x="-33.02" y="-33.02" rot="R180"/>
-<instance part="U$53" gate="G$1" x="-2.54" y="-22.86" rot="R180"/>
+<instance part="HSENSE" gate="G$1" x="-81.28" y="-50.8" rot="R180"/>
+<instance part="R4" gate="G$1" x="-53.34" y="-27.94" rot="R90"/>
+<instance part="U$54" gate="G$1" x="-68.58" y="-20.32" rot="R180"/>
+<instance part="U$55" gate="G$1" x="-68.58" y="-66.04" rot="R180"/>
 <instance part="U$3" gate="G$1" x="157.48" y="7.62"/>
 <instance part="R7" gate="G$1" x="-91.44" y="50.8" rot="R270"/>
 <instance part="U$26" gate="G$1" x="66.04" y="0" rot="MR0"/>
@@ -13627,7 +13508,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$69" gate="G$1" x="203.2" y="27.94" rot="R180"/>
 <instance part="U$70" gate="G$1" x="203.2" y="20.32" rot="R180"/>
 <instance part="U$71" gate="G$1" x="203.2" y="17.78" rot="R180"/>
-<instance part="SENSE" gate="G$1" x="-27.94" y="-22.86" rot="R90"/>
+<instance part="SENSE" gate="G$1" x="-53.34" y="-38.1"/>
 <instance part="U$20" gate="G$1" x="-33.02" y="86.36"/>
 <instance part="U$11" gate="G$1" x="-33.02" y="58.42"/>
 <instance part="U$19" gate="G$1" x="205.74" y="-2.54"/>
@@ -13638,28 +13519,30 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <instance part="U$30" gate="G$1" x="203.2" y="-10.16" rot="R180"/>
 <instance part="U$31" gate="G$1" x="203.2" y="-12.7" rot="R180"/>
 <instance part="TXLED" gate="G$1" x="66.04" y="-40.64"/>
-<instance part="R11" gate="G$1" x="66.04" y="-30.48" rot="R90"/>
+<instance part="RTX" gate="G$1" x="66.04" y="-30.48" rot="R90"/>
 <instance part="U$48" gate="G$1" x="27.94" y="-22.86" rot="MR0"/>
 <instance part="U$59" gate="G$1" x="40.64" y="-30.48" rot="R180"/>
 <instance part="U$60" gate="G$1" x="30.48" y="-66.04" rot="R180"/>
 <instance part="RXLED" gate="G$1" x="106.68" y="-40.64"/>
-<instance part="R1" gate="G$1" x="106.68" y="-30.48" rot="R90"/>
+<instance part="RRX" gate="G$1" x="106.68" y="-30.48" rot="R90"/>
 <instance part="U$61" gate="G$1" x="81.28" y="-30.48" rot="R180"/>
 <instance part="JTX" gate="R$1" x="76.2" y="-73.66"/>
 <instance part="JRX" gate="R$1" x="116.84" y="-73.66"/>
-<instance part="JINT" gate="R$1" x="-15.24" y="12.7"/>
-<instance part="U$2" gate="G$1" x="-99.06" y="91.44" rot="R180"/>
-<instance part="U$63" gate="G$1" x="-99.06" y="106.68" rot="R180"/>
 <instance part="U$57" gate="A" x="-78.74" y="63.5"/>
-<instance part="U$57" gate="B" x="-78.74" y="73.66"/>
-<instance part="U$64" gate="NPN" x="63.5" y="-55.88"/>
-<instance part="U$64" gate="PNP" x="50.8" y="-43.18"/>
-<instance part="U$72" gate="NPN" x="104.14" y="-55.88"/>
-<instance part="U$72" gate="PNP" x="91.44" y="-43.18"/>
-<instance part="U$73" gate="NPN" x="-22.86" y="-43.18"/>
+<instance part="UTX" gate="NPN" x="63.5" y="-55.88"/>
+<instance part="UTX" gate="PNP" x="50.8" y="-43.18"/>
+<instance part="URX" gate="NPN" x="104.14" y="-55.88"/>
+<instance part="URX" gate="PNP" x="91.44" y="-43.18"/>
 <instance part="U$32" gate="G$1" x="147.32" y="-17.78"/>
 <instance part="U$46" gate="G$1" x="116.84" y="-17.78"/>
-<instance part="IC1" gate="G$1" x="134.62" y="-17.78"/>
+<instance part="U$74" gate="G$1" x="66.04" y="5.08" rot="R180"/>
+<instance part="U$73" gate="PNP" x="-2.54" y="-35.56"/>
+<instance part="U$73" gate="NPN" x="-55.88" y="-50.8"/>
+<instance part="U$57" gate="B" x="-83.82" y="76.2"/>
+<instance part="U$2" gate="G$1" x="58.42" y="73.66" rot="R180"/>
+<instance part="U$33" gate="G$1" x="-15.24" y="-20.32" rot="R180"/>
+<instance part="JP1" gate="G$1" x="-17.78" y="-35.56" rot="R180"/>
+<instance part="JP2" gate="G$1" x="-20.32" y="-35.56"/>
 </instances>
 <busses>
 <bus name="ADBUS:TXD,RXD,RTS#,CTS#,DTR#,DSR#,DCD#,RI#">
@@ -13754,10 +13637,10 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pinref part="U$24" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PWRLED" gate="G$1" pin="C"/>
 <pinref part="U$52" gate="G$1" pin="GND"/>
-<wire x1="7.62" y1="-53.34" x2="7.62" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-66.04" x2="0" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="0" y1="-63.5" x2="0" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="0" y1="-66.04" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="PWRLED" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="GND"/>
@@ -13769,7 +13652,8 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </segment>
 <segment>
 <pinref part="U$55" gate="G$1" pin="GND"/>
-<wire x1="-20.32" y1="-50.8" x2="-20.32" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-58.42" x2="-53.34" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-66.04" x2="-66.04" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="U$73" gate="NPN" pin="C"/>
 </segment>
 <segment>
@@ -13812,8 +13696,8 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="106.68" y1="-66.04" x2="106.68" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="-66.04" x2="66.04" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="66.04" y="-66.04"/>
-<pinref part="U$64" gate="NPN" pin="C"/>
-<pinref part="U$72" gate="NPN" pin="C"/>
+<pinref part="UTX" gate="NPN" pin="C"/>
+<pinref part="URX" gate="NPN" pin="C"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -13941,11 +13825,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="-10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="G$1" pin="+3V3"/>
-<pinref part="JINT" gate="R$1" pin="P$2"/>
-</segment>
-<segment>
 <pinref part="JPWRSEL" gate="A" pin="2"/>
 <wire x1="81.28" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$41" gate="G$1" pin="+3V3"/>
@@ -13955,7 +13834,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pinref part="U$43" gate="G$1" pin="+3V3"/>
 <pinref part="U$10" gate="C$1" pin="P$2"/>
 <wire x1="-10.16" y1="91.44" x2="-7.62" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="91.44" x2="0" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="91.44" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="81.28" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="81.28" x2="-7.62" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-7.62" y="91.44"/>
@@ -14034,23 +13913,12 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </net>
 <net name="VCCIO" class="0">
 <segment>
-<pinref part="FTDI" gate="1" pin="VCCIO"/>
-<wire x1="60.96" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="VCCIO"/>
-</segment>
-<segment>
 <pinref part="JPWRSEL" gate="A" pin="3"/>
 <wire x1="73.66" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="JPWRSEL" gate="A" pin="4"/>
 <wire x1="73.66" y1="2.54" x2="81.28" y2="2.54" width="0.1524" layer="91"/>
 <junction x="73.66" y="2.54"/>
 <pinref part="U$39" gate="G$1" pin="VCCIO"/>
-</segment>
-<segment>
-<pinref part="U$53" gate="G$1" pin="VCCIO"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="-27.94" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-22.86" x2="0" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$65" gate="G$1" pin="P$28"/>
@@ -14064,13 +13932,18 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="53.34" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-35.56" x2="53.34" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$59" gate="G$1" pin="VCCIO"/>
-<pinref part="U$64" gate="PNP" pin="E"/>
+<pinref part="UTX" gate="PNP" pin="E"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="-30.48" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-35.56" x2="93.98" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$61" gate="G$1" pin="VCCIO"/>
-<pinref part="U$72" gate="PNP" pin="E"/>
+<pinref part="URX" gate="PNP" pin="E"/>
+</segment>
+<segment>
+<pinref part="FTDI" gate="1" pin="VCCIO"/>
+<wire x1="60.96" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VCCIO"/>
 </segment>
 </net>
 <net name="USB+5V" class="0">
@@ -14106,23 +13979,16 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pinref part="U$23" gate="G$1" pin="USB+5V"/>
 </segment>
 <segment>
-<pinref part="U$49" gate="C$1" pin="P$2"/>
-<wire x1="-53.34" y1="91.44" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="91.44" x2="-45.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="81.28" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$20" gate="G$1" pin="VIN"/>
-<wire x1="-45.72" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$20" gate="G$1" pin="EN"/>
-<junction x="-45.72" y="91.44"/>
-<pinref part="U$2" gate="G$1" pin="USB+5V"/>
-<wire x1="-53.34" y1="91.44" x2="-96.52" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-53.34" y="91.44"/>
+<pinref part="U$73" gate="PNP" pin="E"/>
+<wire x1="-12.7" y1="-20.32" x2="0" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="0" y1="-20.32" x2="0" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U$33" gate="G$1" pin="USB+5V"/>
 </segment>
 </net>
 <net name="+3V3OUT" class="0">
 <segment>
 <pinref part="FTDI" gate="1" pin="3V3OUT"/>
-<wire x1="58.42" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$37" gate="G$1" pin="+3V3OUT"/>
 </segment>
 <segment>
@@ -14132,7 +13998,11 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="-27.94" y1="12.7" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-27.94" y="12.7"/>
 <pinref part="U$42" gate="G$1" pin="+3V3OUT"/>
-<pinref part="JINT" gate="R$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="JPWRSEL" gate="A" pin="1"/>
+<pinref part="U$74" gate="G$1" pin="+3V3OUT"/>
+<wire x1="68.58" y1="5.08" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWREN#" class="0">
@@ -14171,12 +14041,18 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <label x="185.42" y="0" size="1.27" layer="95"/>
 <pinref part="U$19" gate="G$1" pin="P$5"/>
 </segment>
+<segment>
+<wire x1="-22.86" y1="-35.56" x2="-40.64" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-40.64" y="-35.56" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U$54" gate="G$1" pin="+5V"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="-22.86" x2="-45.72" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RS485" gate="G$1" pin="VCC"/>
@@ -14200,11 +14076,11 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </segment>
 <segment>
 <wire x1="66.04" y1="-22.86" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="RTX" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="-22.86" x2="66.04" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="U$48" gate="G$1" pin="+5V"/>
 <wire x1="106.68" y1="-22.86" x2="66.04" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="RRX" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="-22.86" x2="106.68" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="66.04" y="-22.86"/>
 </segment>
@@ -14224,10 +14100,22 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="-43.18" y1="53.34" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="53.34" x2="-53.34" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$50" gate="G$1" pin="+5V"/>
-<wire x1="-58.42" y1="63.5" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="63.5" x2="-58.42" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="91.44" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-58.42" y="63.5"/>
 <pinref part="U$57" gate="A" pin="D"/>
+<pinref part="U$49" gate="C$1" pin="P$2"/>
+<wire x1="-53.34" y1="91.44" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="91.44" x2="-45.72" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="81.28" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$20" gate="G$1" pin="VIN"/>
+<wire x1="-45.72" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U$20" gate="G$1" pin="EN"/>
+<junction x="-45.72" y="91.44"/>
+<wire x1="-53.34" y1="91.44" x2="-58.42" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-53.34" y="91.44"/>
+<junction x="-58.42" y="91.44"/>
 </segment>
 </net>
 <net name="PWREN" class="0">
@@ -14244,7 +14132,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="PWRLED" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="-38.1" x2="7.62" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="0" y1="-53.34" x2="0" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXLED#" class="0">
@@ -14363,23 +14251,18 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <net name="SENSE" class="0">
 <segment>
 <pinref part="HSENSE" gate="G$1" pin="1"/>
-<wire x1="-33.02" y1="-43.18" x2="-66.04" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U$73" gate="NPN" pin="B"/>
+<wire x1="-66.04" y1="-50.8" x2="-78.74" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="-22.86" x2="-30.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-33.02" x2="-53.34" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="SENSE" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="DCD#" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-55.88" y="-33.02" size="1.27" layer="95"/>
-</segment>
 <segment>
 <pinref part="FTDI" gate="1" pin="!DCD"/>
 <wire x1="91.44" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
@@ -14392,12 +14275,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </net>
 <net name="SENSLED" class="0">
 <segment>
-<wire x1="-22.86" y1="-22.86" x2="-20.32" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-33.02" x2="-20.32" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-33.02" x2="-27.94" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-20.32" y="-33.02"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-53.34" y1="-43.18" x2="-53.34" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="SENSE" gate="G$1" pin="C"/>
 <pinref part="U$73" gate="NPN" pin="E"/>
 </segment>
@@ -14455,8 +14333,8 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <net name="N$9" class="0">
 <segment>
 <wire x1="53.34" y1="-48.26" x2="53.34" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="U$64" gate="PNP" pin="C"/>
-<pinref part="U$64" gate="NPN" pin="B"/>
+<pinref part="UTX" gate="PNP" pin="C"/>
+<pinref part="UTX" gate="NPN" pin="B"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -14468,21 +14346,21 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="66.04" y1="-48.26" x2="71.12" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-48.26" x2="71.12" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="66.04" y="-48.26"/>
-<pinref part="U$64" gate="NPN" pin="E"/>
+<pinref part="UTX" gate="NPN" pin="E"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="TXLED" gate="G$1" pin="A"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="RTX" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="-38.1" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="93.98" y1="-48.26" x2="93.98" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="U$72" gate="PNP" pin="C"/>
-<pinref part="U$72" gate="NPN" pin="B"/>
+<pinref part="URX" gate="PNP" pin="C"/>
+<pinref part="URX" gate="NPN" pin="B"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -14494,13 +14372,13 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <wire x1="106.68" y1="-48.26" x2="111.76" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-48.26" x2="111.76" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="106.68" y="-48.26"/>
-<pinref part="U$72" gate="NPN" pin="E"/>
+<pinref part="URX" gate="NPN" pin="E"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="RXLED" gate="G$1" pin="A"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="RRX" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="-38.1" x2="106.68" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14508,14 +14386,28 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <segment>
 <wire x1="40.64" y1="-43.18" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
 <label x="35.56" y="-43.18" size="1.778" layer="95"/>
-<pinref part="U$64" gate="PNP" pin="B"/>
+<pinref part="UTX" gate="PNP" pin="B"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <wire x1="81.28" y1="-43.18" x2="76.2" y2="-43.18" width="0.1524" layer="91"/>
 <label x="76.2" y="-43.18" size="1.778" layer="95"/>
-<pinref part="U$72" gate="PNP" pin="B"/>
+<pinref part="URX" gate="PNP" pin="B"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$73" gate="PNP" pin="C"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="0" y1="-43.18" x2="0" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$73" gate="PNP" pin="B"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
