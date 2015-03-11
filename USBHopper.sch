@@ -9433,7 +9433,7 @@ Copyright: Würth Elektronik</description>
 <part name="U$23" library="supply3" deviceset="USB+5V" device=""/>
 <part name="U$24" library="supply3" deviceset="GND" device=""/>
 <part name="U$50" library="supply3" deviceset="+5V" device=""/>
-<part name="PWRLED" library="flo-led" deviceset="LED" device="KPT-2012" value="Blue"/>
+<part name="LED2" library="flo-led" deviceset="LED" device="KPT-2012" value="Blue"/>
 <part name="U$52" library="supply3" deviceset="GND" device=""/>
 <part name="HGND" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="U$47" library="supply3" deviceset="GND" device=""/>
@@ -9448,14 +9448,14 @@ Copyright: Würth Elektronik</description>
 <part name="C9" library="flo-parts" deviceset="CAPACITOR" device="" value="10µF &lt;- check"/>
 <part name="U$56" library="supply3" deviceset="GND" device=""/>
 <part name="U$58" library="supply3" deviceset="GND" device=""/>
-<part name="SENSE" library="flo-led" deviceset="LED" device="KPT-2012" value="Orange"/>
+<part name="LED1" library="flo-led" deviceset="LED" device="KPT-2012" value="Orange"/>
 <part name="U4" library="flo-parts" deviceset="DCDC" device=""/>
 <part name="U5" library="flo-parts" deviceset="DCDC" device=""/>
-<part name="TXLED" library="flo-led" deviceset="LED" device="KPT-2012" value="Green"/>
+<part name="LED4" library="flo-led" deviceset="LED" device="KPT-2012" value="Green"/>
 <part name="U$48" library="supply3" deviceset="+5V" device=""/>
 <part name="U$59" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$60" library="supply3" deviceset="GND" device=""/>
-<part name="RXLED" library="flo-led" deviceset="LED" device="KPT-2012" value="Red"/>
+<part name="LED3" library="flo-led" deviceset="LED" device="KPT-2012" value="Red"/>
 <part name="U$61" library="supply3" deviceset="VCCIO" device=""/>
 <part name="JTX" library="flo-parts" deviceset="RESISTOR" device="CONNECT"/>
 <part name="JRX" library="flo-parts" deviceset="RESISTOR" device="CONNECT"/>
@@ -9546,7 +9546,7 @@ Copyright: Würth Elektronik</description>
 <instance part="U$23" gate="G$1" x="40.64" y="68.58" rot="R90"/>
 <instance part="U$24" gate="G$1" x="35.56" y="68.58" rot="R90"/>
 <instance part="U$50" gate="G$1" x="0" y="106.68"/>
-<instance part="PWRLED" gate="G$1" x="0" y="-60.96" rot="R270"/>
+<instance part="LED2" gate="G$1" x="0" y="-60.96" rot="R270"/>
 <instance part="U$52" gate="G$1" x="-15.24" y="-66.04" rot="R180"/>
 <instance part="HGND" gate="G$1" x="35.56" y="0"/>
 <instance part="U$47" gate="G$1" x="30.48" y="2.54" rot="R180"/>
@@ -9561,14 +9561,14 @@ Copyright: Würth Elektronik</description>
 <instance part="C9" gate="C$1" x="-7.62" y="58.42" rot="R90"/>
 <instance part="U$56" gate="G$1" x="-45.72" y="83.82" rot="R270"/>
 <instance part="U$58" gate="G$1" x="-45.72" y="55.88" rot="R270"/>
-<instance part="SENSE" gate="G$1" x="-53.34" y="-40.64" rot="R270"/>
+<instance part="LED1" gate="G$1" x="-53.34" y="-40.64" rot="R270"/>
 <instance part="U4" gate="G$1" x="-33.02" y="86.36"/>
 <instance part="U5" gate="G$1" x="-33.02" y="58.42"/>
-<instance part="TXLED" gate="G$1" x="66.04" y="-43.18" rot="R270"/>
+<instance part="LED4" gate="G$1" x="66.04" y="-43.18" rot="R270"/>
 <instance part="U$48" gate="G$1" x="27.94" y="-22.86" rot="MR0"/>
 <instance part="U$59" gate="G$1" x="40.64" y="-30.48" rot="R180"/>
 <instance part="U$60" gate="G$1" x="30.48" y="-66.04" rot="R180"/>
-<instance part="RXLED" gate="G$1" x="106.68" y="-43.18" rot="R270"/>
+<instance part="LED3" gate="G$1" x="106.68" y="-43.18" rot="R270"/>
 <instance part="U$61" gate="G$1" x="81.28" y="-30.48" rot="R180"/>
 <instance part="JTX" gate="R$1" x="76.2" y="-73.66"/>
 <instance part="JRX" gate="R$1" x="116.84" y="-73.66"/>
@@ -9705,7 +9705,7 @@ Copyright: Würth Elektronik</description>
 <pinref part="U$52" gate="G$1" pin="GND"/>
 <wire x1="0" y1="-63.5" x2="0" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="0" y1="-66.04" x2="-12.7" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="PWRLED" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="GND"/>
@@ -10210,7 +10210,7 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="PWRLED" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="0" y1="-53.34" x2="0" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="R4" gate="R$1" pin="P$1"/>
 </segment>
@@ -10326,7 +10326,7 @@ Copyright: Würth Elektronik</description>
 <net name="N$2" class="0">
 <segment>
 <wire x1="-53.34" y1="-33.02" x2="-53.34" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="SENSE" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R3" gate="R$1" pin="P$1"/>
 </segment>
 </net>
@@ -10344,7 +10344,7 @@ Copyright: Würth Elektronik</description>
 <net name="SENSLED" class="0">
 <segment>
 <wire x1="-53.34" y1="-43.18" x2="-53.34" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="SENSE" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="U1" gate="NPN" pin="E"/>
 </segment>
 </net>
@@ -10379,7 +10379,7 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="TXLED" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="66.04" y1="-50.8" x2="66.04" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="JTX" gate="R$1" pin="P$1"/>
 <wire x1="66.04" y1="-48.26" x2="66.04" y2="-45.72" width="0.1524" layer="91"/>
@@ -10391,7 +10391,7 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="TXLED" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="66.04" y1="-38.1" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R$1" pin="P$1"/>
 </segment>
@@ -10405,7 +10405,7 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="RXLED" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="106.68" y1="-50.8" x2="106.68" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="JRX" gate="R$1" pin="P$1"/>
 <wire x1="106.68" y1="-48.26" x2="106.68" y2="-45.72" width="0.1524" layer="91"/>
@@ -10417,7 +10417,7 @@ Copyright: Würth Elektronik</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="RXLED" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="106.68" y1="-38.1" x2="106.68" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R$1" pin="P$1"/>
 </segment>

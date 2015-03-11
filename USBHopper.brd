@@ -712,8 +712,8 @@ A
 <text x="17.907" y="11.303" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R2">R2</text>
 <text x="47.752" y="2.032" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R3</text>
 <text x="59.817" y="2.032" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R4</text>
-<text x="57.531" y="17.272" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R5</text>
-<text x="45.593" y="17.399" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R6</text>
+<text x="59.817" y="17.272" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R5</text>
+<text x="47.752" y="17.272" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">R6</text>
 <text x="11.557" y="7.112" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">C1</text>
 <text x="17.907" y="8.763" size="0.6096" layer="51" font="vector" ratio="16" distance="175">C2</text>
 <text x="51.562" y="9.652" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">C3</text>
@@ -768,6 +768,10 @@ END</text>
 <text x="25.908" y="0.254" size="0.6096" layer="51" font="vector" ratio="16" distance="175">Sen</text>
 <wire x1="25.4" y1="0.508" x2="25.654" y2="0.508" width="0.1524" layer="51"/>
 <wire x1="27.94" y1="0.508" x2="27.686" y2="0.508" width="0.1524" layer="51"/>
+<text x="50.292" y="1.651" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">LED1</text>
+<text x="62.357" y="1.524" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">LED2</text>
+<text x="50.292" y="16.764" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">LED3</text>
+<text x="62.357" y="16.764" size="0.6096" layer="51" font="vector" ratio="16" distance="175" rot="R90">LED4</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1574,7 +1578,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="42.545" y="10.16" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X1" library="con-usb" package="USB-PLUG-A-SMD-2S" value="USB-1X-2S-PLUG-A-SMD" x="-4.445" y="10.16"/>
-<element name="PWRLED" library="flo-led" package="KPT-2012" value="Blue" x="60.96" y="2.54" rot="R180"/>
+<element name="LED2" library="flo-led" package="KPT-2012" value="Blue" x="60.96" y="2.54" rot="R180"/>
 <element name="HGND" library="pinhead" package="1X02" value="" x="26.67" y="18.415"/>
 <element name="C6" library="flo-parts" package="0805" value="4.4µF" x="10.16" y="17.145" rot="R270"/>
 <element name="L2" library="flo-parts" package="0806" value="2.2µH" x="19.05" y="17.145" rot="R270"/>
@@ -1582,11 +1586,11 @@ design rules under a new name.</description>
 <element name="C7" library="flo-parts" package="0805" value="4.4µF &lt;- check" x="10.16" y="3.175" rot="R90"/>
 <element name="L3" library="flo-parts" package="0806" value="2.2µH &lt;- check" x="19.05" y="3.175" rot="R270"/>
 <element name="C9" library="flo-parts" package="0805" value="10µF &lt;- check" x="21.59" y="3.175" rot="R90"/>
-<element name="SENSE" library="flo-led" package="KPT-2012" value="Orange" x="48.895" y="2.54" rot="R180"/>
+<element name="LED1" library="flo-led" package="KPT-2012" value="Orange" x="48.895" y="2.54" rot="R180"/>
 <element name="U4" library="flo-parts" package="SOT23" value="DCDC" x="14.605" y="17.145" rot="R270"/>
 <element name="U5" library="flo-parts" package="SOT23" value="DCDC" x="14.605" y="3.175" rot="R270"/>
-<element name="TXLED" library="flo-led" package="KPT-2012" value="Green" x="60.96" y="17.78" rot="R180"/>
-<element name="RXLED" library="flo-led" package="KPT-2012" value="Red" x="48.895" y="17.78" rot="R180"/>
+<element name="LED4" library="flo-led" package="KPT-2012" value="Green" x="60.96" y="17.78" rot="R180"/>
+<element name="LED3" library="flo-led" package="KPT-2012" value="Red" x="48.895" y="17.78" rot="R180"/>
 <element name="JTX" library="flo-parts" package="0805_CONNECT" value="" x="61.595" y="17.78" rot="MR270"/>
 <element name="JRX" library="flo-parts" package="0805_CONNECT" value="" x="49.53" y="17.78" rot="MR90"/>
 <element name="U2" library="flo-logic" package="SOT-457" value="4k7/47k" x="54.61" y="17.78" rot="R90"/>
@@ -1696,7 +1700,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="P$6"/>
 <contactref element="U3" pad="P$6"/>
 <contactref element="U1" pad="P$6"/>
-<contactref element="PWRLED" pad="2"/>
+<contactref element="LED2" pad="2"/>
 <contactref element="C9" pad="P$1"/>
 <contactref element="C8" pad="P$2"/>
 <via x="12.573" y="19.177" extent="1-16" drill="0.3048" shape="octagon"/>
@@ -2413,7 +2417,7 @@ design rules under a new name.</description>
 <wire x1="17.399" y1="10.16" x2="17.399" y2="12.7" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="PWRLED" pad="1"/>
+<contactref element="LED2" pad="1"/>
 <contactref element="R4" pad="P$1"/>
 <wire x1="60.96" y1="3.44" x2="58.454" y2="3.59" width="0.1524" layer="1"/>
 <wire x1="58.454" y1="3.59" x2="58.42" y2="3.556" width="0.1524" layer="1"/>
@@ -2592,7 +2596,7 @@ design rules under a new name.</description>
 <wire x1="43.307" y1="1.27" x2="41.275" y2="3.175" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="SENSE" pad="1"/>
+<contactref element="LED1" pad="1"/>
 <contactref element="R3" pad="P$1"/>
 <wire x1="48.895" y1="3.44" x2="46.389" y2="1.49" width="0.1524" layer="1"/>
 <wire x1="46.389" y1="1.49" x2="46.355" y2="1.524" width="0.1524" layer="1"/>
@@ -2612,7 +2616,7 @@ design rules under a new name.</description>
 <wire x1="64.9224" y1="10.5156" x2="64.9224" y2="9.525" width="0.1524" layer="1"/>
 </signal>
 <signal name="SENSLED">
-<contactref element="SENSE" pad="2"/>
+<contactref element="LED1" pad="2"/>
 <contactref element="U1" pad="P$1"/>
 <wire x1="52.959" y1="1.651" x2="52.959" y2="2.413" width="0.1524" layer="1"/>
 <wire x1="52.959" y1="2.413" x2="52.2478" y2="3.0734" width="0.1524" layer="1"/>
@@ -2658,7 +2662,7 @@ design rules under a new name.</description>
 <wire x1="63.3222" y1="11.5824" x2="62.103" y2="10.541" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$10">
-<contactref element="TXLED" pad="2"/>
+<contactref element="LED4" pad="2"/>
 <contactref element="JTX" pad="P$1"/>
 <contactref element="U2" pad="P$1"/>
 <wire x1="53.71" y1="16.58" x2="53.721" y2="17.3228" width="0.1524" layer="1"/>
@@ -2671,7 +2675,7 @@ design rules under a new name.</description>
 <wire x1="59.69" y1="18.288" x2="61.595" y2="18.5674" width="0.254" layer="16"/>
 </signal>
 <signal name="N$11">
-<contactref element="TXLED" pad="1"/>
+<contactref element="LED4" pad="1"/>
 <contactref element="R5" pad="P$1"/>
 <wire x1="60.96" y1="18.68" x2="60.74" y2="19.05" width="0.1524" layer="1"/>
 <wire x1="60.74" y1="19.05" x2="59.055" y2="19.05" width="0.1524" layer="1"/>
@@ -2679,7 +2683,7 @@ design rules under a new name.</description>
 <wire x1="58.801" y1="18.796" x2="58.42" y2="18.796" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$6">
-<contactref element="RXLED" pad="2"/>
+<contactref element="LED3" pad="2"/>
 <contactref element="JRX" pad="P$1"/>
 <contactref element="U3" pad="P$1"/>
 <wire x1="41.645" y1="16.58" x2="41.656" y2="17.272" width="0.1524" layer="1"/>
@@ -2692,7 +2696,7 @@ design rules under a new name.</description>
 <wire x1="49.53" y1="16.9926" x2="47.625" y2="17.018" width="0.254" layer="16"/>
 </signal>
 <signal name="N$12">
-<contactref element="RXLED" pad="1"/>
+<contactref element="LED3" pad="1"/>
 <contactref element="R6" pad="P$1"/>
 <wire x1="48.895" y1="18.68" x2="48.675" y2="19.05" width="0.1524" layer="1"/>
 <wire x1="48.675" y1="19.05" x2="46.99" y2="19.05" width="0.1524" layer="1"/>
