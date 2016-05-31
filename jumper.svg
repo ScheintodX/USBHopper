@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="jumper.svg">
+   sodipodi:docname="jumper.svg"
+   inkscape:export-filename="/home/flo/workspace-mcu/eagle/Flo/USBHopper/jumper.png"
+   inkscape:export-xdpi="120"
+   inkscape:export-ydpi="120">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,17 +28,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="815.02145"
-     inkscape:cy="135.62184"
+     inkscape:zoom="0.7"
+     inkscape:cx="662.10726"
+     inkscape:cy="279.40095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:window-width="702"
+     inkscape:window-height="452"
+     inkscape:window-x="663"
+     inkscape:window-y="285"
+     inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata

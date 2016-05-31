@@ -1,6 +1,6 @@
 #USB-Hopper
 
-[USB Hopper PCB design](layout.png)
+[USB Hopper PCB design](layout.png?raw=true)
 
 *The swiss army knife for working with microcontrollers*
 
