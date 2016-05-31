@@ -66,6 +66,8 @@
 
 #Brides/Jumpers
 
+![Jumper layout](jumper.svg)
+
 A. Main Power Supply jumper:
 
 This one controls the power supply for the ftdi io pins and most of the header pins. It can have 4 settings: 5V, 3.3V FT generated, 3.3V Buck generated and 1.8V. 
