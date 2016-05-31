@@ -66,7 +66,7 @@
 
 #Brides/Jumpers
 
-![Jumper layout](jumper.svg)
+![Jumper layout](jumper.svg?raw=true)
 
 A. Main Power Supply jumper:
 
