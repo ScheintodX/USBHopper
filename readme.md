@@ -45,6 +45,7 @@
 * Use KiCAD instead of Eagle
 * Better isolation of Sense pins
 * JTAG is not working well with FT232R and so didn't manage to get in.
+* Make RE/DI controllable by FTDI pins
 
 
 #Files:
