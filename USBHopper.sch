@@ -45,7 +45,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2630,6 +2630,31 @@ FQP27P06 -
 <smd name="2" x="0" y="1.3" dx="1.6" dy="1.6" layer="1" roundness="20"/>
 <smd name="1" x="0" y="-1.3" dx="1.6" dy="1.6" layer="1" roundness="20"/>
 </package>
+<package name="KPT-2012-E">
+<wire x1="-0.65" y1="1" x2="0.65" y2="1" width="0.127" layer="21"/>
+<wire x1="0.65" y1="1" x2="0.65" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.65" y1="0.6" x2="0.65" y2="0.1" width="0.127" layer="21"/>
+<wire x1="0.65" y1="0.1" x2="0.65" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-0.6" x2="0.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-1" x2="-0.65" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="-1" x2="-0.65" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="-0.6" x2="-0.65" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="0.1" x2="-0.65" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="0.6" x2="-0.65" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="0.6" x2="-0.3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.3" y1="0.6" x2="0.65" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="-0.6" x2="0.65" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="0.6" x2="-0.3" y2="0.1" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="0.1" x2="-0.65" y2="0.1" width="0.127" layer="21"/>
+<wire x1="0.3" y1="0.6" x2="0.3" y2="0.1" width="0.127" layer="21"/>
+<wire x1="0.3" y1="0.1" x2="0.65" y2="0.1" width="0.127" layer="21"/>
+<smd name="2" x="0" y="1" dx="1.25" dy="1.4" layer="1" roundness="20"/>
+<smd name="1" x="0" y="-1" dx="1.25" dy="1.4" layer="1" roundness="20"/>
+<wire x1="0" y1="0.2" x2="-0.3" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.2" x2="0.3" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="0.3" y1="-0.2" x2="0" y2="0.2" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -2690,6 +2715,15 @@ FQP27P06 -
 </technologies>
 </device>
 <device name="KPT-2012" package="KPT-2012">
+<connects>
+<connect gate="G$1" pin="A$1" pad="1"/>
+<connect gate="G$1" pin="C$1" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KPT-2012-E" package="KPT-2012-E">
 <connects>
 <connect gate="G$1" pin="A$1" pad="1"/>
 <connect gate="G$1" pin="C$1" pad="2"/>
@@ -2993,7 +3027,7 @@ Copyright: Würth Elektronik</description>
 <part name="U$23" library="supply3" deviceset="USB+5V" device=""/>
 <part name="U$24" library="supply3" deviceset="GND" device=""/>
 <part name="U$50" library="supply3" deviceset="+5V" device=""/>
-<part name="LED2" library="flo-led" deviceset="LED" device="KPT-2012" value="Blue"/>
+<part name="LED2" library="flo-led" deviceset="LED" device="KPT-2012-E" value="Blue"/>
 <part name="U$52" library="supply3" deviceset="GND" device=""/>
 <part name="HGND" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="U$47" library="supply3" deviceset="GND" device=""/>
@@ -3008,14 +3042,14 @@ Copyright: Würth Elektronik</description>
 <part name="C9" library="flo-parts" deviceset="CAPACITOR" device="" value="10µF"/>
 <part name="U$56" library="supply3" deviceset="GND" device=""/>
 <part name="U$58" library="supply3" deviceset="GND" device=""/>
-<part name="LED1" library="flo-led" deviceset="LED" device="KPT-2012" value="Orange"/>
+<part name="LED1" library="flo-led" deviceset="LED" device="KPT-2012-E" value="Orange"/>
 <part name="U4" library="flo-parts" deviceset="DCDC" device="" value="ADP2108AUJZ-3.3-R7"/>
 <part name="U5" library="flo-parts" deviceset="DCDC" device="" value="ADP2108AUJZ-1.8-R7"/>
-<part name="LED4" library="flo-led" deviceset="LED" device="KPT-2012" value="Green"/>
+<part name="LED4" library="flo-led" deviceset="LED" device="KPT-2012-E" value="Green"/>
 <part name="U$48" library="supply3" deviceset="+5V" device=""/>
 <part name="U$59" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$60" library="supply3" deviceset="GND" device=""/>
-<part name="LED3" library="flo-led" deviceset="LED" device="KPT-2012" value="Red"/>
+<part name="LED3" library="flo-led" deviceset="LED" device="KPT-2012-E" value="Red"/>
 <part name="U$61" library="supply3" deviceset="VCCIO" device=""/>
 <part name="JTX" library="flo-parts" deviceset="RESISTOR" device="CONNECT" value="0"/>
 <part name="JRX" library="flo-parts" deviceset="RESISTOR" device="CONNECT" value="0"/>
@@ -3056,11 +3090,11 @@ Copyright: Würth Elektronik</description>
 <part name="U$71" library="supply3" deviceset="VCCIO" device=""/>
 <part name="U$77" library="supply3" deviceset="GND" device=""/>
 <part name="U$19" library="flo-header" deviceset="CON2X2" device="PIN_L"/>
-<part name="U$21" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
-<part name="U$27" library="flo-header" deviceset="CON1X2" device="PIN_XL" value="CON1X2PIN_XL"/>
+<part name="S1" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
+<part name="S2" library="flo-header" deviceset="CON1X2" device="PIN_XL" value="CON1X2PIN_XL"/>
 <part name="U$46" library="supply3" deviceset="GND" device=""/>
-<part name="U$10" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
-<part name="U$11" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
+<part name="S4" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
+<part name="S3" library="flo-header" deviceset="CON1X1" device="PIN_XL"/>
 <part name="U$20" library="flo-parts" deviceset="TANTAL" device="1206"/>
 <part name="R7" library="flo-parts" deviceset="RESISTOR" device="WIDE" value="60"/>
 <part name="R8" library="flo-parts" deviceset="RESISTOR" device="CONNECT" value="60"/>
@@ -3232,11 +3266,11 @@ Copyright: Würth Elektronik</description>
 <instance part="U$71" gate="G$1" x="213.36" y="60.96" rot="R180"/>
 <instance part="U$77" gate="G$1" x="213.36" y="58.42" rot="R180"/>
 <instance part="U$19" gate="G$1" x="195.58" y="22.86"/>
-<instance part="U$21" gate="G$1" x="-71.12" y="-50.8" rot="R180"/>
-<instance part="U$27" gate="G$1" x="-22.86" y="-33.02" rot="R270"/>
+<instance part="S1" gate="G$1" x="-71.12" y="-50.8" rot="R180"/>
+<instance part="S2" gate="G$1" x="-22.86" y="-33.02" rot="R270"/>
 <instance part="U$46" gate="G$1" x="170.18" y="60.96" rot="R180"/>
-<instance part="U$10" gate="G$1" x="43.18" y="-55.88" rot="R180"/>
-<instance part="U$11" gate="G$1" x="86.36" y="-55.88" rot="R180"/>
+<instance part="S4" gate="G$1" x="43.18" y="-55.88" rot="R180"/>
+<instance part="S3" gate="G$1" x="86.36" y="-55.88" rot="R180"/>
 <instance part="U$20" gate="G$1" x="-22.86" y="33.02" rot="R270"/>
 <instance part="R7" gate="R$1" x="195.58" y="-40.64"/>
 <instance part="R8" gate="R$1" x="195.58" y="-50.8"/>
@@ -3786,7 +3820,7 @@ Copyright: Würth Elektronik</description>
 <wire x1="-22.86" y1="-35.56" x2="-33.02" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-35.56" x2="-33.02" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-33.02" y="-50.8" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$27" gate="G$1" pin="P$2"/>
+<pinref part="S2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
@@ -3991,7 +4025,7 @@ Copyright: Würth Elektronik</description>
 <segment>
 <pinref part="U1" gate="NPN" pin="B"/>
 <wire x1="-66.04" y1="-50.8" x2="-73.66" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="U$21" gate="G$1" pin="P$1"/>
+<pinref part="S1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4041,7 +4075,7 @@ Copyright: Würth Elektronik</description>
 <pinref part="U2" gate="NPN" pin="B"/>
 <wire x1="53.34" y1="-55.88" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="53.34" y="-55.88"/>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
+<pinref part="S4" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4070,7 +4104,7 @@ Copyright: Würth Elektronik</description>
 <pinref part="U3" gate="NPN" pin="B"/>
 <wire x1="93.98" y1="-55.88" x2="83.82" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="93.98" y="-55.88"/>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
+<pinref part="S3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4103,7 +4137,7 @@ Copyright: Würth Elektronik</description>
 <segment>
 <pinref part="U1" gate="PNP" pin="B"/>
 <wire x1="-20.32" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="U$27" gate="G$1" pin="P$1"/>
+<pinref part="S2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4182,15 +4216,8 @@ Copyright: Würth Elektronik</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,63.5,76.2,FTDI,VCC,USB+5V,,,"/>
-<approved hash="202,1,63.5,63.5,FTDI,OSCI,,,,"/>
-<approved hash="202,1,63.5,68.58,FTDI,!RESET,,,,"/>
-<approved hash="208,1,63.5,48.26,+3V3OUT,out,,,,"/>
-<approved hash="208,1,60.96,48.26,+3V3OUT,sup,,,,"/>
-<approved hash="208,1,-35.56,12.7,+3V3OUT,sup,,,,"/>
 <approved hash="208,1,68.58,5.08,+3V3OUT,sup,,,,"/>
 <approved hash="113,1,77.4277,3.94123,JPWRSEL,,,,,"/>
-<approved hash="113,1,33.2571,2.67123,HGND,,,,,"/>
 </errors>
 </schematic>
 </drawing>

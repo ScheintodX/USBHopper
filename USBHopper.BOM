@@ -1,0 +1,20 @@
+1x X1 Conn USB
+1x Q1 BSS308PE
+1x U4 ADP2108-3.3
+1x U5 ADP2108-1.8
+1x FTDI FT232R
+1x RS485 ST1480ACDR
+3x RN4604 NPN/PNP 47k
+1x LED1 rot (sense)
+1x LED2 blau (power)
+1x LED3 gelb (rx)
+1x LED4 grün (tx)
+2x C6,C7 Cap 4,7µ X7R
+2x L2,L3 Ind 1µH
+2x C8,C9 Cap 10µ X7R
+1x Ferrite K400R
+3x C2,C3,C4 Cap 100n
+1x Tantal 4,7µ
+1x C1 Cap 10n
+1x R1 10k
+1x R2 1k
