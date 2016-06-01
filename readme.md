@@ -46,6 +46,7 @@
 * Better isolation of Sense pins
 * JTAG is not working well with FT232R and so didn't manage to get in.
 * Make RE/DI controllable by FTDI pins
+* Put RTS/DTR on pads
 
 
 #Files:
@@ -92,3 +93,7 @@ G. Connect DE/RE Pins of the transceiver to Vcc/GND. You normally want to do thi
 H. Either connect the Tx/Rx LEDS directly to the FT Led pins (jumper closed) or via transistor to the Tx/Rx Lines (jumper open but transistor arrays on the board.)
 
 K. Not really good termination settings.
+
+# Config
+
+The FT232R has many config options. Use the "FT_Prog" utility to change pin mappings and maximum power rating.
