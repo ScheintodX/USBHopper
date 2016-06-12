@@ -46,7 +46,8 @@
 * Better isolation of Sense pins
 * JTAG is not working well with FT232R and so didn't manage to get in.
 * Make RE/DI controllable by FTDI pins
-* Put RTS/DTR on pads
+* Put RTS/DTR on pads (not only pins because they are usefull for esp programming)
+* Make external power switchable via some signal lines / jumpers / both
 
 
 #Files:
